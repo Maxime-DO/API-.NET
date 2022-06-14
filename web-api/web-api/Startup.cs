@@ -11,6 +11,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+// IMPORTS THOMAS :
+using Microsoft.EntityFrameworkCore;
+using web_api.Models;
+
 namespace web_api
 {
     public class Startup
@@ -25,6 +29,14 @@ namespace web_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+
+            builder.Services.AddControllers();
+            builder.Services.AddDbContext<MangaContext>(opt =>
+                opt.UseInMemoryDatabase("Manga"));
+
             services.AddControllers();
             // Register the Swagger generator, defining 1 or more Swagger documents  
             services.AddSwaggerGen();
