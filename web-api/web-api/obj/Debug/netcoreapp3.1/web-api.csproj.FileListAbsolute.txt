@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/thomasrevel/Documents/EISI - Master/dotnet/API/API-.NET/web-api/web-api/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/thomasrevel/Documents/EISI - Master/dotnet/API/API-.NET/web-api/web-api/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/thomasrevel/Documents/EISI - Master/dotnet/API/API-.NET/web-api/web-api/bin/Debug/netcoreapp3.1/web-api.deps.json
@@ -18,3 +19,32 @@
 /Users/thomasrevel/Documents/EISI - Master/dotnet/API/API-.NET/web-api/web-api/obj/Debug/netcoreapp3.1/web-api.dll
 /Users/thomasrevel/Documents/EISI - Master/dotnet/API/API-.NET/web-api/web-api/obj/Debug/netcoreapp3.1/web-api.pdb
 /Users/thomasrevel/Documents/EISI - Master/dotnet/API/API-.NET/web-api/web-api/obj/Debug/netcoreapp3.1/web-api.genruntimeconfig.cache
+=======
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\web-api.exe
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\web-api.deps.json
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\web-api.runtimeconfig.json
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\web-api.runtimeconfig.dev.json
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\web-api.dll
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\web-api.pdb
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.csproj.AssemblyReference.cache
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.AssemblyInfoInputs.cache
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.AssemblyInfo.cs
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.csproj.CoreCompileInputs.cache
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\staticwebassets\web-api.StaticWebAssets.Manifest.cache
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\staticwebassets\web-api.StaticWebAssets.xml
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\scopedcss\bundle\web-api.styles.css
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.RazorTargetAssemblyInfo.cache
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.dll
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.pdb
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.genruntimeconfig.cache
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\maxig\Documents\1_IPI_DPI\API-DOT-NET\web_project\web-api\web-api\obj\Debug\netcoreapp3.1\web-api.csproj.CopyComplete
+>>>>>>> 6492bdde2f6b0448e5bd1ae37c4135e943e6537c

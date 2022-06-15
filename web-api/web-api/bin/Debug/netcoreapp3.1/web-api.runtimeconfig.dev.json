@@ -1,8 +1,13 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "/Users/thomasrevel/.dotnet/store/|arch|/|tfm|",
       "/Users/thomasrevel/.nuget/packages"
+=======
+      "C:\\Users\\maxig\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\maxig\\.nuget\\packages"
+>>>>>>> 6492bdde2f6b0448e5bd1ae37c4135e943e6537c
     ]
   }
 }

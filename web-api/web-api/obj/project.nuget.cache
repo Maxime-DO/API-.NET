@@ -4,5 +4,16 @@
   "success": true,
   "projectFilePath": "/Users/thomasrevel/Documents/EISI - Master/dotnet/API/API-.NET/web-api/web-api/web-api.csproj",
   "expectedPackageFiles": [],
+  "dgSpecHash": "HbPNlveK452tn7Q2vf/OiccvGqa84cSdvzhAJsPWUUKp26L8gLHZ6yKUd4ehptbX/Wd6UzSpyFOFV/P7VFHJRA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maxig\\Documents\\1_IPI_DPI\\API-DOT-NET\\web_project\\web-api\\web-api\\web-api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maxig\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\maxig\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\maxig\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
+    "C:\\Users\\maxig\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "C:\\Users\\maxig\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "C:\\Users\\maxig\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512"
+  ],
   "logs": []
 }
