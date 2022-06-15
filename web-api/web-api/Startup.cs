@@ -1,15 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 // IMPORTS THOMAS :
 using Microsoft.EntityFrameworkCore;
@@ -29,17 +22,20 @@ namespace web_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            //builder.Services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new() { Title = "TodoApi", Version = "v1" });
+            //});
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
-            builder.Services.AddDbContext<MangaContext>(opt =>
+            services.AddControllers();
+            services.AddDbContext<MangaContext>(opt =>
                 opt.UseInMemoryDatabase("Manga"));
 
-            services.AddControllers();
-            // Register the Swagger generator, defining 1 or more Swagger documents  
-            services.AddSwaggerGen();
+            // services.AddControllers();
+            // // Register the Swagger generator, defining 1 or more Swagger documents  
+            // services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -77,3 +73,5 @@ namespace web_api
         }
     }
 }
+
+

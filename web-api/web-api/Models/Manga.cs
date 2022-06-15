@@ -4,6 +4,8 @@ namespace web_api.Models
 {
     public class Manga
     {
+        public long Id { get; set; }
+
         public string Nom { get; set; }
 
         public string Auteur { get; set; }
