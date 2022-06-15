@@ -1,3 +1,4 @@
+using System.Reflection.PortableExecutable;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -82,7 +83,8 @@ namespace web_api.Controllers
             _context.Manga.Add(manga);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetManga", new { id = manga.Id }, manga);
+            return CreatedAtAction(nameof(GetManga), new { id = ManagedPEBuilder.Id}, manga);
+            // return CreatedAtAction("GetManga", new { id = manga.Id }, manga);
         }
 
         // DELETE: api/Manga/5
