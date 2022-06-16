@@ -14,9 +14,9 @@ namespace web_api.Models
 
         public string Description { get; set; }
 
-        public int Volume { get; set; }
+        // public int Volume { get; set; }
 
-        public int Note { get; set; }
+        // public int Note { get; set; }
 
         public string Etat { get; set; }
 

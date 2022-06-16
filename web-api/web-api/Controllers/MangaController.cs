@@ -10,7 +10,7 @@ using web_api.Models;
 
 namespace web_api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/manga")]
     [ApiController]
     public class MangaController : ControllerBase
     {
@@ -83,7 +83,7 @@ namespace web_api.Controllers
             _context.Manga.Add(manga);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetManga), new { id = Manga.Id}, manga);
+            return CreatedAtAction(nameof(GetManga), new { id = manga.Id}, manga);
             // return CreatedAtAction("GetManga", new { id = manga.Id }, manga);
         }
 
