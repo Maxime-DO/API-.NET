@@ -8,11 +8,11 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using TestAuthentificationToken.Models;
+using web_api.Models;
 
-namespace TestAuthentificationToken.Controllers
+namespace web_api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/login")]
     [ApiController]
     public class LoginController : ControllerBase
     {
@@ -38,7 +38,7 @@ namespace TestAuthentificationToken.Controllers
             return NotFound("User not found");
         }
 
-        private string Generate(UserModel user)
+        private string Generate(User user)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);

@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using TestAuthentificationToken.Models;
+using web_api.Models;
 
-namespace TestAuthentificationToken.Controllers
+namespace web_api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/user")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -48,7 +48,7 @@ namespace TestAuthentificationToken.Controllers
             return Ok("Hi, you're on public property");
         }
 
-        private UserModel GetCurrentUser()
+        private User GetCurrentUser()
         {
             var identity = HttpContext.User.Identity as ClaimsIdentity;
 
@@ -56,7 +56,7 @@ namespace TestAuthentificationToken.Controllers
             {
                 var userClaims = identity.Claims;
 
-                return new UserModel
+                return new User
                 {
                     Username = userClaims.FirstOrDefault(o => o.Type == ClaimTypes.NameIdentifier)?.Value,
                     EmailAddress = userClaims.FirstOrDefault(o => o.Type == ClaimTypes.Email)?.Value,

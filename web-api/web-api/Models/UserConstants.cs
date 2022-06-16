@@ -1,6 +1,6 @@
 public class UserConstants
 {
-    public static List<UserModel> Users = new List<UserModel>()
+    public static List<User> Users = new List<User>()
     {
         new UserModel() { Username = "maxigo",
                         EmailAddress = "maxigo31@live.fr", 
