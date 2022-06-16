@@ -24,14 +24,15 @@ namespace web_api
         {
             //builder.Services.AddSwaggerGen(c =>
             //{
-            //    c.SwaggerDoc("v1", new() { Title = "TodoApi", Version = "v1" });
+            //    c.SwaggerDoc("v1", new() { Title = "MangaAPI", Version = "v1" });
             //});
 
             // Add services to the container.
 
-            services.AddControllers();
             services.AddDbContext<MangaContext>(opt =>
                 opt.UseInMemoryDatabase("Manga"));
+            
+            // AUTHENTIFICATION JWT BEARER TOKEN :
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options =>
                     {
@@ -46,7 +47,8 @@ namespace web_api
                             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                         };
                     });
-            // services.AddControllers();
+            services.AddMvc();
+            services.AddControllers();
             // // Register the Swagger generator, defining 1 or more Swagger documents  
             // services.AddSwaggerGen();
         }
@@ -68,6 +70,7 @@ namespace web_api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.RazorPages();
             });
 
             // Enable middleware to serve generated Swagger as a JSON endpoint.  
