@@ -32,7 +32,20 @@ namespace web_api
             services.AddControllers();
             services.AddDbContext<MangaContext>(opt =>
                 opt.UseInMemoryDatabase("Manga"));
-
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options =>
+                    {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuer = true,
+                            ValidateAudience = true,
+                            ValidateLifetime = true,
+                            ValidateIssuerSigningKey = true,
+                            ValidIssuer = Configuration["Jwt:Issuer"],
+                            ValidAudience = Configuration["Jwt:Audience"],
+                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                        };
+                    });
             // services.AddControllers();
             // // Register the Swagger generator, defining 1 or more Swagger documents  
             // services.AddSwaggerGen();
