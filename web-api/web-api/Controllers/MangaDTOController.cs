@@ -112,19 +112,18 @@ namespace web_api.Controllers
             return _context.Manga.Any(e => e.Id == id);
         }
 
-        private static MangaDTO ItemToDTO(Manga manga) {
-            new MangaDTO 
+        private static MangaDTO ItemToDTO(Manga manga) => 
+            new MangaDTO
             {
-                Id = Manga.Id,
-                Nom = Manga.Nom,
-                Auteur = Manga.Auteur,
-                Editeur = Manga.Editeur,
-                Description = Manga.Description,
-                Etat = Manga.Etat,
-                Type = Manga.Type,
-                Themes = Manga.Themes,
-                Genre = Manga.Genre
-            }
+                Id = manga.Id,
+                Nom = manga.Nom,
+                Auteur = manga.Auteur,
+                Editeur = manga.Editeur,
+                Description = manga.Description,
+                Etat = manga.Etat,
+                Type = manga.Type,
+                Themes = manga.Themes,
+                Genre = manga.Genre
+            };
         }
-    }
 }
