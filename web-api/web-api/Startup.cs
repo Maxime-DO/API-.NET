@@ -1,13 +1,14 @@
+using System.Text;
+using web_api.Models;
+using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using web_api.Models;
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace web_api
 {
@@ -20,13 +21,14 @@ namespace web_api
 
         public IConfiguration Configuration { get; }
 
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             // Register the Swagger generator, defining 1 or more Swagger documents  
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "MangaAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MangaAPI", Version = "v1" });
             });
 
             // Add services to the container.
@@ -51,6 +53,7 @@ namespace web_api
             services.AddMvc();
             services.AddControllers();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
