@@ -23,21 +23,21 @@ namespace web_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //builder.Services.AddSwaggerGen(c =>
-            //{
-            //    c.SwaggerDoc("v1", new() { Title = "MangaAPI", Version = "v1" });
-            //});
+            // Register the Swagger generator, defining 1 or more Swagger documents  
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "MangaAPI", Version = "v1" });
+            });
 
             // Add services to the container.
-
             services.AddDbContext<MangaContext>(opt =>
                 opt.UseInMemoryDatabase("Manga"));
-            
+
             // AUTHENTIFICATION JWT BEARER TOKEN :
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                     .AddJwtBearer(options =>
                     {
-                    options.TokenValidationParameters = new TokenValidationParameters
+                        options.TokenValidationParameters = new TokenValidationParameters
                         {
                             ValidateIssuer = true,
                             ValidateAudience = true,
@@ -50,8 +50,6 @@ namespace web_api
                     });
             services.AddMvc();
             services.AddControllers();
-            // // Register the Swagger generator, defining 1 or more Swagger documents  
-            // services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -84,7 +82,7 @@ namespace web_api
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MangaAPI V1");
                 c.RoutePrefix = string.Empty;
             });
         }
